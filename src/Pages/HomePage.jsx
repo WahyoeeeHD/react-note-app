@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAllNotes, deleteNote, getActiveNotes } from '../utils/local-data';
+import { deleteNote, getActiveNotes } from '../utils/local-data';
 import { useSearchParams } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import NoteList from '../components/NoteList';
@@ -14,7 +14,7 @@ function HomepageWrapper() {
   }
 
   return (
-    <Homepage defaultKeyword={keyword} keywordChange={changeSearchParams} />
+    <Homepage defaultKeyword={ keyword } keywordChange={ changeSearchParams } />
   );
 }
 
@@ -62,10 +62,10 @@ class Homepage extends React.Component {
       <section className="homepage">
         <h2>Catatan Aktif</h2>
         <SearchBar
-          keyword={this.state.keyword}
-          keywordChange={this.onKeywordChangeHandler}
+          keyword={ this.state.keyword }
+          keywordChange={ this.onKeywordChangeHandler }
         />
-        <NoteList notes={notes} />
+        <NoteList notes={ notes } />
       </section>
     );
   }

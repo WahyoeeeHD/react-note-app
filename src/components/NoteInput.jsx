@@ -43,21 +43,21 @@ class NoteInput extends React.Component {
             className="add-new-page__input__title"
             type="text"
             placeholder="Masukkan catatan"
-            value={this.state.title}
-            onChange={this.onTitleChangeHandler}
+            value={ this.state.title }
+            onChange={ this.onTitleChangeHandler }
           />
           <textarea
             className="add-new-page__input__body"
             placeholder="Masukkan isi catatan"
-            value={this.state.body}
-            onChange={this.onBodyChangeHandler}></textarea>
+            value={ this.state.body }
+            onChange={ this.onBodyChangeHandler }></textarea>
         </div>
         <div className="add-new-page__action">
           <button
             className="action"
             type="button"
             title="Simpan catatan"
-            onClick={this.onClickHandler}>
+            onClick={ this.onClickHandler }>
             <svg
               stroke="currentColor"
               fill="currentColor"

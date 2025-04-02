@@ -5,11 +5,11 @@ function SearchBar({ keyword, keywordChange }) {
     return (
         <section className="search-bar">
             <input
-            type="text"
-            placeholder="Cari Nama Kontak"
-            value={keyword}
-            onChange={(event) => keywordChange(event.target.value)}
-        />
+                type="text"
+                placeholder="Cari Nama Kontak"
+                value={ keyword }
+                onChange={ (event) => keywordChange(event.target.value) }
+            />
         </section>
     );
 }

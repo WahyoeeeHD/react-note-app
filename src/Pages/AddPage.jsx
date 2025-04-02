@@ -3,17 +3,17 @@ import { addNote } from "../utils/local-data";
 import NoteInput from '../components/NoteInput';
 import { useNavigate } from "react-router-dom";
 
-function AddNote(){
+function AddNote() {
     const navigate = useNavigate();
 
-    function onAddNoteHandler(note){
+    function onAddNoteHandler(note) {
         addNote(note);
         navigate('/');
     }
 
     return (
-        <NoteInput addNote={onAddNoteHandler} />
-    )
+        <NoteInput addNote={ onAddNoteHandler } />
+    );
 }
 
 export default AddNote;

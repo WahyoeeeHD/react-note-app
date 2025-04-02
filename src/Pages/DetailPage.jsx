@@ -25,10 +25,10 @@ function DetailPageWrapper() {
 
     return (
         <DetailPage
-            id={id}
-            onDelete={onDeleteHandler}
-            onArchive={onArchiveHandler}
-            onUnarchive={onUnarchiveHandler}
+            id={ id }
+            onDelete={ onDeleteHandler }
+            onArchive={ onArchiveHandler }
+            onUnarchive={ onUnarchiveHandler }
         />
     );
 }
@@ -65,10 +65,10 @@ class DetailPage extends React.Component {
 
         return (
             <NoteDetail
-                onDelete={this.onDeleteHandler}
-                onArchive={this.onArchiveHandler}
-                onUnarchive={this.onUnarchiveHandler}
-                {...this.state.note}
+                onDelete={ this.onDeleteHandler }
+                onArchive={ this.onArchiveHandler }
+                onUnarchive={ this.onUnarchiveHandler }
+                { ...this.state.note }
             />
         );
     }

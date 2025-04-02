@@ -14,7 +14,7 @@ function ArchivePageWrapper() {
   }
 
   return (
-    <ArchivePage defaultKeyword={keyword} keywordChange={changeSearchParams} />
+    <ArchivePage defaultKeyword={ keyword } keywordChange={ changeSearchParams } />
   );
 }
 
@@ -62,10 +62,10 @@ class ArchivePage extends React.Component {
       <section className="homepage">
         <h2>Catatan Aktif</h2>
         <SearchBar
-          keyword={this.state.keyword}
-          keywordChange={this.onKeywordChangeHandler}
+          keyword={ this.state.keyword }
+          keywordChange={ this.onKeywordChangeHandler }
         />
-        <NoteList notes={notes} />
+        <NoteList notes={ notes } />
       </section>
     );
   }

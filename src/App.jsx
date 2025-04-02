@@ -16,11 +16,11 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<HomepageWrapper />}/>
-          <Route path='/notes/:id' element={<DetailPageWrapper />} />
-          <Route path='/notes/new' element={<AddNote />}/>
-          <Route path='/notes/archives' element={<ArchivePageWrapper />}/>
-          <Route path='*' element={<NotFound />}/>
+          <Route path='/' element={ <HomepageWrapper /> } />
+          <Route path='/notes/:id' element={ <DetailPageWrapper /> } />
+          <Route path='/notes/new' element={ <AddNote /> } />
+          <Route path='/notes/archives' element={ <ArchivePageWrapper /> } />
+          <Route path='*' element={ <NotFound /> } />
         </Routes>
       </main>
     </div>
