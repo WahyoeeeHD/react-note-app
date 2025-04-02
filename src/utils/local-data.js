@@ -52,12 +52,12 @@ function getNote(id) { // check
   return foundedNote;
 }
 
-function getActiveNotes() {
+function getActiveNotes() { // check
   const activeNotes = notes.filter((note) => !note.archived);
   return activeNotes;
 }
 
-function getArchivedNotes() {
+function getArchivedNotes() { // check
   const archivedNotes = notes.filter((note) => note.archived);
   return archivedNotes;
 }
@@ -81,7 +81,7 @@ function archiveNote(id) { // check
   });
 }
 
-function unarchiveNote(id) {
+function unarchiveNote(id) { // check
   notes = notes.map((note) => {
     if (note.id === id) {
       return { ...note, archived: false };
